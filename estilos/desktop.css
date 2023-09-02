@@ -1,0 +1,215 @@
+@charset "UTF-8";
+/* Desktop */
+
+@media screen and (min-width: 778px) and (max-width: 1440px){
+
+
+    main {
+        width: 1024px;
+    }
+    
+    header {
+        display: grid;
+        padding: 20px;
+        background-color: rgba(228, 225, 225, 0.336);
+        background-image: url(../imagens/imagens-fundo/bg-hero-desktop.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: right bottom;
+    
+        box-shadow: 0px 2px  rgba(255, 255, 0, 0.336);
+
+        grid-template-areas: 'auto' 'auto';
+        grid-template-columns: 564px 460px;
+        grid-template-rows: 65px 200px 100px;
+    }
+/*filhos do header*/
+    .iten1 {
+        grid-area: 1/1/1/ span 2;
+        padding-left: 45px;
+        padding-right: 45px;
+    }
+
+    .iten2 {
+        display: flex;
+        grid-area: 2/1;
+        padding: 0px 10px 0px 40px;
+
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .botao_rosa {
+        height: 50px;
+        grid-area: 3/1;
+        margin-right: 250px;
+    }
+
+    .iten4 {
+        grid-area: 2/2/ span 3/2;
+    }
+
+    #iten4_img {
+        margin: auto;
+        width: 400px;
+    }
+/* --------------------------- */
+
+#div_logo {    
+    width: 85%;
+}
+
+#div_trYitFree {
+  width: 15%;  
+}
+
+#div_trYitFree > a {
+    padding: 2px 5px;
+}
+
+header > div {
+    margin-top: 0px;
+}
+
+header > div > h1 {
+    text-align: left;
+    padding: 0px 200px 0px 0px;
+    margin-bottom: 20px;
+}
+
+header > div > p {
+    padding: 0px 0px;
+    margin: 0px;
+    text-align: left;
+}
+
+header > figure {
+    margin: auto;
+
+
+}
+
+#conteiner {
+    display: flex;   
+    width: 100%;
+    padding: 40px 0px 220px 0px;
+
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+section {
+    display: grid;
+    width: 92%;
+    margin-bottom: 0px;
+    box-shadow: 0px 0px 10px rgba(255, 255, 0, 0.473);
+    border-radius: 10px;
+
+    grid-template-areas: 'auto auto';
+    grid-template-columns: 50% 50%;
+    row-gap: 550px;
+    align-items: center;
+    justify-content: center;
+}
+
+.section_pg {
+    text-align: left;
+    padding: 20px 40px 40px;
+    font-size: 0.8em;
+}
+
+.titulo_N2 {
+    text-align: left;
+    margin-left: 40px;
+}
+
+#secao1 > figure {
+    grid-area: 1/2;
+}
+
+#secao1 > div {
+    grid-area: 1/1;
+}
+
+#secao2 > figure {
+    grid-area: 1/1;
+}
+
+#secao2 > div {
+    grid-area: 1/2
+}
+
+#secao3 > figure {
+    grid-area: 1/2;
+}
+
+#secao3 > div {
+    grid-area: 1/1;
+}
+
+.figure_ilustrações {
+    display: block;
+    width: 50%;
+    margin: auto;
+}
+
+aside {
+    position: absolute;
+    width: 500px;
+    height: 150px;
+    background-color: rgb(240, 238, 238);
+    border-radius: 20px;
+
+    top: 75%;
+    left: 50%;
+
+    transform: translate(-50%, -35%);
+}
+
+aside> div.botao_rosa {    
+    margin: auto;   
+}
+
+footer {
+    display: grid;
+    width: 100%;
+    background-color: #00252E;
+    padding: 0px 40px;
+
+    grid-template-areas:'caixa1 caixa1 caixa1' 'caixa2 caixa3 caixa4' 'caixa5 caixa5 caixa5';
+    grid-template-columns: 300px 400px 200px;
+    column-gap: 30px;
+}
+
+.caixa1 {
+    grid-area: caixa1;
+}
+
+.caixa2 {
+    grid-area: caixa2;
+}
+
+.caixa3 {
+    grid-area: caixa3;
+}
+
+.caixa4 {
+    grid-area: caixa4;
+}
+
+.caixa5 {
+    grid-area: caixa5;
+}
+
+.caixa5 > dfn {
+    text-align: right;
+}
+
+#group2 > ul {
+    columns: 2;
+    color: white;
+    list-style-type: none;
+}
+}
